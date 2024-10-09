@@ -30,7 +30,7 @@ import java.util.concurrent.Executors;
  * @see RandomSearch
  * @see ParMC
  */
-public class MCAgentN extends AgentBase implements PlayAgent {
+public class MCAgentN extends AgentBase {
     private final Random random = new Random();
     private transient ExecutorService executorService = Executors.newWorkStealingPool();
 

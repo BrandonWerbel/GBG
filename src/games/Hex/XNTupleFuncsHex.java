@@ -3,12 +3,9 @@ package games.Hex;
 import games.BoardVector;
 import games.StateObservation;
 import games.XNTupleBase;
-import games.XNTupleFuncs;
-
-import java.io.Serializable;
 import java.util.HashSet;
 
-public class XNTupleFuncsHex extends XNTupleBase implements XNTupleFuncs, Serializable {
+public class XNTupleFuncsHex extends XNTupleBase {
 	
     /**
      * change the version ID for serialization only if a newer version is no longer
@@ -252,7 +249,7 @@ public class XNTupleFuncsHex extends XNTupleBase implements XNTupleFuncs, Serial
 
 
     @Override
-    public HashSet adjacencySet(int iCell) {
+    public HashSet<Integer> adjacencySet(int iCell) {
         //Each cell has a max of 6 neighbors
         //Coordinates of those relative to current cell:
         //-1,0; -1,1; 0,-1; 0,1; 1,-1; 1,0 (x,y)
@@ -324,8 +321,8 @@ public class XNTupleFuncsHex extends XNTupleBase implements XNTupleFuncs, Serial
 //    }
 
 //    /**
-//     * Rotates the board by 180° degrees by mirroring along both axes.
-//     * Hex has rotational symmetry if rotated by 180°. Slower than {@link #rotateBoard2(BoardVector)}.
+//     * Rotates the board by 180ï¿½ degrees by mirroring along both axes.
+//     * Hex has rotational symmetry if rotated by 180ï¿½. Slower than {@link #rotateBoard2(BoardVector)}.
 //     *
 //     * @param boardVector Game board vector
 //     * @return Rotated board
@@ -343,8 +340,8 @@ public class XNTupleFuncsHex extends XNTupleBase implements XNTupleFuncs, Serial
 //    }
 
     /**
-     * Rotates the board by 180° degrees by mirroring along both axes.
-     * Hex has rotational symmetry if rotated by 180°.
+     * Rotates the board by 180ï¿½ degrees by mirroring along both axes.
+     * Hex has rotational symmetry if rotated by 180ï¿½.
      *
      * @param boardVector game board vector
      * @return rotated board vector

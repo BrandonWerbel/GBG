@@ -1,12 +1,10 @@
 package games.Othello.Edax;
 
 import java.io.Serial;
-import java.io.Serializable;
 import java.util.ArrayList;
 
 import agentIO.LoadSaveGBG;
 import controllers.AgentBase;
-import controllers.PlayAgent;
 import games.Arena;
 import games.StateObservation;
 import games.Othello.StateObserverOthello;
@@ -21,7 +19,7 @@ import tools.Types.ACTIONS_VT;
  * It has a simpler interface, and it has no need for initialization
  *
  */
-public class Edax2 extends AgentBase implements PlayAgent, Serializable
+public class Edax2 extends AgentBase
 {
 	@Serial
 	private static final long serialVersionUID = 13L;

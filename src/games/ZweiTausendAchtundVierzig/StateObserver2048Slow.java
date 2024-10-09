@@ -2,7 +2,6 @@ package games.ZweiTausendAchtundVierzig;
 
 import games.ObsNondetBase;
 import games.StateObservation;
-import games.StateObsNondeterministic;
 import tools.Types;
 import tools.Types.ACTIONS;
 
@@ -22,7 +21,7 @@ import java.util.Random;
  * 
  * @author Johannes Kutsch, 2016
  */
-public class StateObserver2048Slow extends ObsNondetBase implements StateObsNondeterministic {
+public class StateObserver2048Slow extends ObsNondetBase {
     private final Random random = new Random();
     protected List<Tile> emptyTiles = new ArrayList<>();
     protected List<Integer> availableMoves;
@@ -113,7 +112,8 @@ public class StateObserver2048Slow extends ObsNondetBase implements StateObsNond
     private boolean assertSameAdvance(int iAction) {
     	StateObserver2048Slow sot = this.copy();
     	int[][] iArray = toArray();
-    	StateObserver2048 sbs = new StateObserver2048(iArray, score, winState,true);
+    	@SuppressWarnings("deprecation")
+        StateObserver2048 sbs = new StateObserver2048(iArray, score, winState,true);
     	//System.out.println("sot: "+sot.toHexString()+",  score="+sot.getScore());
     	//System.out.println("sbs: "+sbs.stringDescr()+",  score="+sbs.getScore());
     	sot.move(iAction);
@@ -473,7 +473,7 @@ public class StateObserver2048Slow extends ObsNondetBase implements StateObsNond
 
     @Override
 	public ArrayList<ACTIONS> getAllAvailableActions() {
-        ArrayList allActions = new ArrayList<>();
+        ArrayList<ACTIONS> allActions = new ArrayList<>();
         for (int j = 0; j < 4; j++) 
         	allActions.add(Types.ACTIONS.fromInt(j));
         

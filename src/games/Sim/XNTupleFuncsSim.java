@@ -1,6 +1,5 @@
 package games.Sim;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -13,11 +12,10 @@ import games.BoardVector;
 import games.StateObsWithBoardVector;
 import games.StateObservation;
 import games.XNTupleBase;
-import games.XNTupleFuncs;
 import tools.PermutationIterable;
 import tools.PermutationIterator;
 
-public class XNTupleFuncsSim extends XNTupleBase implements XNTupleFuncs, Serializable {
+public class XNTupleFuncsSim extends XNTupleBase {
 
 	List<int[]> list = new ArrayList<int[]>();
 	transient AllPermutation perm; // /WK/ 'perm' is only needed to build 'list'. 'perm' could be local to setPermutations()
@@ -99,7 +97,7 @@ public class XNTupleFuncsSim extends XNTupleBase implements XNTupleFuncs, Serial
         for (int i = 0; i < ConfigSim.NUM_NODES; i++) il.add(Integer.valueOf(i));
         pi = new PermutationIterable <Integer> (il);
 
-        // this is the old version by Percy Wünsch. It explicitly creates all 
+        // this is the old version by Percy Wï¿½nsch. It explicitly creates all 
         // permutations in perm and therefore crashes (mem exhausted) if the 
         // number of nodes is larger
 //		int [] nodes = getNodes();		
@@ -276,7 +274,7 @@ public class XNTupleFuncsSim extends XNTupleBase implements XNTupleFuncs, Serial
 //		return symmetricVectors;
 	}
 	
-	// --- old version (P. Wünsch), now obsolete
+	// --- old version (P. Wï¿½nsch), now obsolete
 	// crate a symmetric vector for given permutation of nodes
 //	private BoardVector getSymVector(BoardVector bv,int [] permutation)
 //	{
@@ -290,7 +288,7 @@ public class XNTupleFuncsSim extends XNTupleBase implements XNTupleFuncs, Serial
 //		return new BoardVector(mergeVector(splittedSymVec));
 //	}
 	
-	// --- old version (P. Wünsch), now obsolete
+	// --- old version (P. Wï¿½nsch), now obsolete
 //	private int [][] splitVector(int [] boardVector)
 //	{
 //		int [][] vec = new int [ConfigSim.NUM_NODES - 1][];
@@ -308,7 +306,7 @@ public class XNTupleFuncsSim extends XNTupleBase implements XNTupleFuncs, Serial
 //		return vec;
 //	}
 	
-	// --- old version (P. Wünsch), now obsolete
+	// --- old version (P. Wï¿½nsch), now obsolete
 //	private int[] getValuesSameNode(int pos,int [][] boardVec, int [] permutation)
 //	{
 //		int[] vec = new int[ConfigSim.NUM_NODES - 1 - pos];
@@ -330,7 +328,7 @@ public class XNTupleFuncsSim extends XNTupleBase implements XNTupleFuncs, Serial
 //	}
 	
 
-	// --- old version (P. Wünsch), now obsolete
+	// --- old version (P. Wï¿½nsch), now obsolete
 //	private int [] mergeVector(int [][] splittedVec)
 //	{
 //		int[]  vec = new int[ConfigSim.NUM_NODES*(ConfigSim.NUM_NODES-1)/2];
@@ -568,8 +566,8 @@ public class XNTupleFuncsSim extends XNTupleBase implements XNTupleFuncs, Serial
 	}
 
 	@Override
-	public HashSet adjacencySet(int iCell) {
-		HashSet adjSet = new HashSet();
+	public HashSet<Integer> adjacencySet(int iCell) {
+		HashSet<Integer> adjSet = new HashSet<Integer>();
 		int node1 = -1, node2 = -1, count = 0;
 		for(int i = 0; i < ConfigSim.NUM_NODES -1 ; i++)
 		{

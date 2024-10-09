@@ -2,7 +2,6 @@ package games.RubiksCube;
 
 
 import java.io.Serial;
-import java.io.Serializable;
 import java.text.DecimalFormat;
 import java.util.HashSet;
 import java.util.Hashtable;
@@ -20,7 +19,7 @@ import games.RubiksCube.CubeState.Type;
  *
  * @see ColorTrafo
  */
-public class ColorTrafoMap extends Hashtable<Integer,ColorTrafo> implements Serializable {
+public class ColorTrafoMap extends Hashtable<Integer,ColorTrafo> {
 	/**
 	 * (currently only {@code AllColorTrafos})
 	 */

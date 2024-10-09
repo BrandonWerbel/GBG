@@ -19,7 +19,7 @@ import java.util.concurrent.ThreadLocalRandom;
  * </ul>
  *
  */
-public class StateObserverPoker extends ObsNondetBase implements StateObsNondeterministic {
+public class StateObserverPoker extends ObsNondetBase {
 
 	//<editor-fold desc="variables">
 	//debug

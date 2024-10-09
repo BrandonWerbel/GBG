@@ -1,7 +1,5 @@
 package controllers;
 
-import java.io.Serializable;
-
 import games.StateObservation;
 import tools.ScoreTuple;
 import tools.Types;
@@ -16,7 +14,7 @@ import tools.Types;
  * 
  * @see ExpectimaxNAgent
  */
-public class ExpectimaxNWrapper extends ExpectimaxNAgent implements Serializable {
+public class ExpectimaxNWrapper extends ExpectimaxNAgent {
 	private final PlayAgent wrapped_pa;
 	
 	public ExpectimaxNWrapper(PlayAgent pa, int nply) {

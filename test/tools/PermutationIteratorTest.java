@@ -1,15 +1,10 @@
 package tools;
 
-import static org.junit.Assert.*;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
 import org.junit.Test;
-
-import tools.PermutationIterable;
-import tools.PermutationIterator;
 
 public class PermutationIteratorTest {
 

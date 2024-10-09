@@ -2,7 +2,6 @@ package ludiiInterface.general;
 
 import game.Game;
 import games.Hex.HexConfig;
-import games.Nim.NimConfig;
 import ludiiInterface.Util;
 import other.AI;
 import other.GameLoader;
@@ -29,7 +28,7 @@ public class LudiiCustomMatch {
         int gamesNumber = 10;
         String logfilePath ="";
 
-        JComboBox gameComboBox = new JComboBox(games);
+        JComboBox<String> gameComboBox = new JComboBox<String>(games);
         JOptionPane.showMessageDialog(null, gameComboBox,"Choose a game", JOptionPane.QUESTION_MESSAGE);
         String game = (String) gameComboBox.getSelectedItem();
 
@@ -46,7 +45,7 @@ public class LudiiCustomMatch {
             }
             case "Hex" -> {
                 String[] sizes = {"3","4","5","6","7","8"};
-                JComboBox hexSize = new JComboBox(sizes);
+                JComboBox<String> hexSize = new JComboBox<String>(sizes);
                 JOptionPane.showMessageDialog(null,hexSize,"Choose a board size", JOptionPane.QUESTION_MESSAGE);
                 int size = Integer.parseInt((String) hexSize.getSelectedItem());
 
@@ -91,7 +90,7 @@ public class LudiiCustomMatch {
             }
             case "Nim" -> {
                 String[] sizes = {"3", "5", "7", "9", "11", "13", "15", "17", "19"};
-                JComboBox nimSize = new JComboBox(sizes);
+                JComboBox<String> nimSize = new JComboBox<String>(sizes);
                 JOptionPane.showMessageDialog(null,nimSize,"Choose the number of heaps", JOptionPane.QUESTION_MESSAGE);
                 int size = Integer.parseInt((String) nimSize.getSelectedItem());
 

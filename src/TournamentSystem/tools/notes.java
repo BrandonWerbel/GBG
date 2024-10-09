@@ -1,9 +1,5 @@
 package TournamentSystem.tools;
 
-import controllers.AgentBase;
-import controllers.PlayAgent;
-import games.*;
-
 /**
  * This class is used to store some dev notes of the GBG-TS.
  *

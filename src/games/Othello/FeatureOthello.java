@@ -1,17 +1,8 @@
 package games.Othello;
 
 import java.io.Serializable;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
-
 import games.Feature;
 import games.StateObservation;
-import tools.Types;
-import tools.Types.ACTIONS;
-import tools.Types.ACTIONS_VT;
 
 public class FeatureOthello implements Feature, Serializable{
 

@@ -1,7 +1,5 @@
 package games.TicTacToe;
 
-import java.io.Serializable;
-
 import controllers.AgentBase;
 import controllers.PlayAgent;
 import games.Feature;
@@ -23,7 +21,7 @@ import tools.Types;
  *
  * @author Wolfgang Konen, TH Koeln, Nov'16
  */
-public class FeatureTTT extends TicTDBase implements Feature, Serializable {
+public class FeatureTTT extends TicTDBase implements Feature {
 	
 	/**
 	 * change the version ID for serialization only if a newer version is no longer 

@@ -2,7 +2,6 @@ package games.KuhnPoker;
 
 import controllers.MCTSWrapper.utils.Tuple;
 import games.ObsNondetBase;
-import games.StateObsNondeterministic;
 import games.StateObservation;
 import tools.Types;
 import tools.Types.ACTIONS;
@@ -21,7 +20,7 @@ import java.util.concurrent.ThreadLocalRandom;
  * </ul>
  *
  */
-public class StateObserverKuhnPoker extends ObsNondetBase implements StateObsNondeterministic {
+public class StateObserverKuhnPoker extends ObsNondetBase {
 
 	public static final int NUM_PLAYER = 2;
 	private static final int START_CHIPS = 10;

@@ -5,8 +5,6 @@ import games.Arena;
 import games.Othello.ArenaOthello;
 import org.junit.Test;
 
-import java.io.IOException;
-
 /**
  *  Run tests to validate an Othello agent.
  *  Perform the tests from {@link ValidateAgentTest} that are generally admitted for any agent in any game.

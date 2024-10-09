@@ -85,7 +85,7 @@ public class GBGBatch2048 {
 		}
 
 		// start a batch run without any window
-		t_Batch.batch1(filePath,t_Batch.t_Game.m_xab,csvName,upper);
+		t_Batch.batch1(filePath,GBGBatch2048.t_Game.m_xab,csvName,upper);
 
 		System.exit(0);
 	}
@@ -110,7 +110,7 @@ public class GBGBatch2048 {
 		EResult2048 eResult;
 		ArrayList<EResult2048> erList = new ArrayList<>();
 		String str;
-		boolean res = this.t_Game.loadAgent(0, filePath);		
+		boolean res = GBGBatch2048.t_Game.loadAgent(0, filePath);		
 		if (!res) {
 			System.err.println("\n[GBGBatch2048.batch1] Aborted (no agent found).");
 			return;

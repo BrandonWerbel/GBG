@@ -1,6 +1,5 @@
 package games.Sim;
 
-import java.io.Serializable;
 import java.text.DecimalFormat;
 
 import games.Feature;

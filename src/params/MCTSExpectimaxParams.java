@@ -8,7 +8,6 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.Serial;
-import java.io.Serializable;
 
 /**
  * This class realizes the parameter settings (GUI tab) for 
@@ -27,7 +26,7 @@ import java.io.Serializable;
  * @see MCTSExpectimaxAgt
  * @see ParMCTSE
  */
-public class MCTSExpectimaxParams extends Frame implements Serializable
+public class MCTSExpectimaxParams extends Frame
 {
 	private static final String TIPNUMITERL = "Number of iterations during MCTSE search";
 	private static final String TIPKUCTL = "Parameter K in UCT rule ";

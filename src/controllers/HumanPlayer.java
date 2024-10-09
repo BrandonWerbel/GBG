@@ -3,7 +3,7 @@ package controllers;
 import games.StateObservation;
 import tools.Types;
 
-public class HumanPlayer extends AgentBase implements PlayAgent
+public class HumanPlayer extends AgentBase
 {	
 	
 	public HumanPlayer(String name)

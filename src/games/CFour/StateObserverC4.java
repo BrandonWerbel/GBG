@@ -25,7 +25,7 @@ import tools.Types.ACTIONS;
  * 4-in-a-row or whether it completes the board (without any 4-in-a-row) and thus is a draw. It is assumed that
  * the pre-advance state was not a game-over state.
  */
-public class StateObserverC4 extends ObserverBase implements StateObservation {
+public class StateObserverC4 extends ObserverBase {
     private static final double REWARD_NEGATIVE = -1.0;
     private static final double REWARD_POSITIVE =  1.0;
 	protected int m_Player;  // Player who makes the next move (0 or 1)

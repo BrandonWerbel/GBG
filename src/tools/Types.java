@@ -11,7 +11,6 @@ import javax.swing.plaf.FontUIResource;
 
 import controllers.MaxNAgent;
 import games.Arena;
-import games.RubiksCube.CubeConfig;
 import games.RubiksCube.CubeState2x2;
 import games.RubiksCube.StateObserverCube;
 import games.StateObservation;
@@ -161,7 +160,7 @@ public class Types {
 	 *  @see ACTIONS
 	 *  @see ACTIONS_ST
 	 */
-    public static class ACTIONS_VT extends ACTIONS implements Serializable, Comparable<ACTIONS> {
+    public static class ACTIONS_VT extends ACTIONS {
         private double[] vTable;
         private double   vBest;
         private ScoreTuple scBest;

@@ -1,24 +1,15 @@
 package params;
 
-import params.GridLayout2;
 import tools.Types;
 
 import java.awt.BorderLayout;
-import java.awt.Canvas;
-import java.awt.Checkbox;
 import java.awt.Choice;
-import java.awt.Font;
 import java.awt.Panel;
-import java.awt.TextField;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 
 import games.Arena;
 
-import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JFrame;
 

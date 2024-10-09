@@ -251,8 +251,11 @@ public class ExperimentNew {
         PlayAgent observedAgent = setupAgent(agent);
         PlayAgent benchmarkAgent = setupAgent(POKER);
 
-        if(!observedAgent.isTrainable())
+        if(!observedAgent.isTrainable()) {
+            resultsFile.close();
             throw new RuntimeException("Agent: '"+agent+"' can't be trained");
+        }
+            
 
         LocalDateTime now;
         now = LocalDateTime.now();
@@ -355,8 +358,11 @@ public class ExperimentNew {
         int numberOfTrainingsTillEvaluation;
         ScoreTuple[] scores = new ScoreTuple[0];
 
-        if(!observedAgent.isTrainable())
+        if(!observedAgent.isTrainable()) {
+            resultsFile.close();
             throw new RuntimeException("Agent: '"+agent+"' can't be trained");
+        }
+            
 
         numberOfTrainingGames = 40000000;
 

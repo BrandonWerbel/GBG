@@ -2,8 +2,6 @@ package games.BlackJack;
 
 import controllers.PlayAgent;
 import games.Arena;
-import games.EWN.StateObserverEWN;
-import games.GameBoard;
 import games.GameBoardBase;
 import games.StateObservation;
 import games.TicTacToe.GameBoardTTTGui;
@@ -22,7 +20,7 @@ import java.util.Random;
  * action handlers
  *
  */
-public class GameBoardBlackJack extends GameBoardBase implements GameBoard {
+public class GameBoardBlackJack extends GameBoardBase {
 
     protected StateObserverBlackJack m_so;
     protected Arena m_Arena; // a reference to the Arena object, needed to

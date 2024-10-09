@@ -2,13 +2,9 @@ package games.Poker;
 
 import games.BoardVector;
 import games.StateObservation;
-import games.XNTupleBase;
-import games.XNTupleFuncs;
-
-import java.io.Serializable;
 import java.util.HashSet;
 
-public class XNTupleFuncsPokerSimpleRanks extends XNTuplePoker implements XNTupleFuncs, Serializable {
+public class XNTupleFuncsPokerSimpleRanks extends XNTuplePoker {
 
 	/**
 	 * change the version ID for serialization only if a newer version is no longer
@@ -143,7 +139,7 @@ public class XNTupleFuncsPokerSimpleRanks extends XNTuplePoker implements XNTupl
 	}
 
 	@Override
-	public HashSet adjacencySet(int iCell) {
+	public HashSet<Integer> adjacencySet(int iCell) {
 		HashSet<Integer> adjacencySet = new HashSet<>();
 		for(int x=0;x<getNumCells();x++)
 			adjacencySet.add(x);

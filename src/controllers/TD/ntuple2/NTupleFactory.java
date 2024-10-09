@@ -3,14 +3,11 @@ package controllers.TD.ntuple2;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.AbstractSet;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Random;
-import java.util.Set;
 
-import games.StateObservation;
 import games.XNTupleFuncs;
 import params.ParNT;
 
@@ -99,7 +96,7 @@ public class NTupleFactory {
 			int lastMove = rand.nextInt(numCells); // start position
 			tmpTuple[0] = lastMove;
 			boolean first = true;
-			HashSet tupleSet = new HashSet();
+			HashSet<Integer> tupleSet = new HashSet<Integer>();
 
 			for (int j = 0; j < numWalkSteps; j++) {
 				if (first) {
@@ -117,8 +114,8 @@ public class NTupleFactory {
 						// through while picks another cell from tupleSet
 						//
 						int iCell=pickElement(tupleSet);
-						HashSet adjSet = xnf.adjacencySet(iCell);
-						Iterator it = tupleSet.iterator();
+						HashSet<Integer> adjSet = xnf.adjacencySet(iCell);
+						Iterator<Integer> it = tupleSet.iterator();
 						while (it.hasNext()) {
 							adjSet.remove((int)it.next());
 						}
@@ -134,7 +131,7 @@ public class NTupleFactory {
 			assert (tupleSet.size()==numWalkSteps);
 			//System.out.println("tuplSet.size = "+tupleSet.size()+", numWalkSteps:"+numWalkSteps);
 			nTuple = new int[numWalkSteps];
-			Iterator it = tupleSet.iterator();
+			Iterator<Integer> it = tupleSet.iterator();
 			for (int j = 0; j < numWalkSteps; j++)
 				nTuple[j] = (int)it.next();
 			nTuples[i] = nTuple;
@@ -150,9 +147,9 @@ public class NTupleFactory {
 		return nTuples;
 	}
 
-	private int pickElement(HashSet tSet) {
+	private int pickElement(HashSet<Integer> tSet) {
 		int sp = rand.nextInt(tSet.size()); // pick a random element from set
-		Iterator it = tSet.iterator();
+		Iterator<Integer> it = tSet.iterator();
 		int iCell=0,count=0;
 		while (it.hasNext()) {
 			iCell=(int)it.next();

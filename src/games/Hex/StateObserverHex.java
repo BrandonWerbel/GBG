@@ -1,7 +1,6 @@
 package games.Hex;
 
 import games.ObserverBase;
-import games.StateObservation;
 import tools.Types;
 import tools.Types.ACTIONS;
 
@@ -39,7 +38,7 @@ import static games.Hex.HexConfig.*;
  * last row (rows = cells with the same 1st index). The black borders are from lowest to highest row.
  * 
  */
-public class StateObserverHex extends ObserverBase implements StateObservation {
+public class StateObserverHex extends ObserverBase {
     /**
      * change the version ID for serialization only if a newer version is no longer
      * compatible with an older one (older .gamelog or .agt.zip containing this object will

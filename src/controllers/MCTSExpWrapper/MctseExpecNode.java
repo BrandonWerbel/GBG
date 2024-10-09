@@ -119,11 +119,11 @@ public final class MctseExpecNode extends MctseNode {
      * @param histo a {@code Map<Integer, double[]>} that is modified in the EXPECTIMAX recursive call
      * @return the number of EXPECTIMAX nodes in this branch
      */
-    public int numChilds(Map histo) {
+    public int numChilds(Map<Integer, double[]> histo) {
         int numVisits = (int) sum(visitCounts.values());
         double[] entry;
         if (histo.containsKey(numVisits)) {
-            entry = (double[]) histo.get(numVisits);
+            entry = histo.get(numVisits);
         } else {
             int numRans = this.gameState.getAvailableRandoms().length;
             entry = new double[numRans+1];

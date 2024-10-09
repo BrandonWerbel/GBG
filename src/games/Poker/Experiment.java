@@ -388,7 +388,7 @@ public class Experiment {
             case MCTSE -> observedAgent =  setupMCTSAgent(folder);
             case MC -> observedAgent =  setupMCNAgent(folder);
             case TDS -> observedAgent =  setupTDSAgent(folder);
-            default -> throw new Exception("not supported agent for p0");
+            default -> {resultsFile.close(); throw new Exception("not supported agent for p0");}
         }
 
         switch (p1){
@@ -403,7 +403,7 @@ public class Experiment {
             case MCTSE -> benchmarkAgent =  setupMCTSAgent(folder);
             case MC -> benchmarkAgent =  setupMCNAgent(folder);
             case TDS -> benchmarkAgent =  setupTDSAgent(folder);
-            default -> throw new Exception("not supported agent for p1");
+            default -> {resultsFile.close(); throw new Exception("not supported agent for p1");}
         }
 
         PlayAgent[] pavec = new PlayAgent[] {observedAgent,benchmarkAgent};

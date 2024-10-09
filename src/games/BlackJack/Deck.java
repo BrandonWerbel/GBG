@@ -3,8 +3,6 @@ package games.BlackJack;
 import java.util.ArrayList;
 import java.util.Random;
 
-import games.BlackJack.Card.Rank;
-
 public class Deck {
 
     ArrayList<Card> deck;

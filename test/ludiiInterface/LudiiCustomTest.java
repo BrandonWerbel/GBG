@@ -4,7 +4,6 @@ import controllers.PlayAgent;
 import game.Game;
 import games.Arena;
 import games.Hex.HexConfig;
-import games.Yavalath.ConfigYavalath;
 import ludiiInterface.general.GBGAsLudiiAI;
 import org.junit.Test;
 import other.AI;

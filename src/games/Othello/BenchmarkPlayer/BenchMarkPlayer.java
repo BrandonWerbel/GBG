@@ -1,6 +1,5 @@
 package games.Othello.BenchmarkPlayer;
 
-import java.io.Serializable;
 import java.util.Random;
 
 import controllers.AgentBase;

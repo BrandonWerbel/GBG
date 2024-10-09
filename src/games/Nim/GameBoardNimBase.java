@@ -4,7 +4,6 @@ import java.util.Random;
 
 import controllers.PlayAgent;
 import games.Arena;
-import games.GameBoard;
 import games.GameBoardBase;
 import games.StateObservation;
 
@@ -12,7 +11,7 @@ import games.StateObservation;
 /**
  * We need this purely abstract class just to have a common ground for member {@code m_gb} in {@link GameBoardNimGui}.
  */
-public abstract class GameBoardNimBase extends GameBoardBase implements GameBoard {
+public abstract class GameBoardNimBase extends GameBoardBase {
 
 	public GameBoardNimBase(Arena ar) {
 		super(ar);

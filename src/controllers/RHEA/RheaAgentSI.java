@@ -2,14 +2,12 @@ package controllers.RHEA;
 
 import controllers.AgentBase;
 import controllers.MCTS.MCTSAgentT;
-import controllers.PlayAgent;
 import games.StateObservation;
 import org.apache.commons.math3.util.Pair;
 import params.ParMCTS;
 import tools.ScoreTuple;
 import tools.Types;
 
-import java.io.Serializable;
 import java.util.*;
 
 
@@ -18,7 +16,7 @@ import java.util.*;
  *
  * @author Marcel Hartwig, 2022-2023
  **/
-public class RheaAgentSI extends AgentBase implements PlayAgent, Serializable {
+public class RheaAgentSI extends AgentBase {
 
   private static boolean debug = false;
 

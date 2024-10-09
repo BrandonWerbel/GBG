@@ -15,7 +15,6 @@ import params.ParWrapper;
 import tools.ScoreTuple;
 import tools.Types;
 
-import java.io.Serializable;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Map;
@@ -25,7 +24,7 @@ import java.util.Random;
  * PlayAgent that performs a Monte Carlo Tree Search (MCTS) to calculate the next action to be selected.
  * This agent wraps an approximator, which is used to evaluate game states in MCTS simulations.
  */
-public final class MCTSWrapperAgent extends AgentBase implements PlayAgent, Serializable {
+public final class MCTSWrapperAgent extends AgentBase {
     private final int iterations;
     private final MCTS mcts;
     private final Approximator approximator;

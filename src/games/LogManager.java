@@ -1,10 +1,7 @@
 package games;
 
-import controllers.AgentBase;
-import controllers.PlayAgent;
 import tools.Types;
 
-import javax.swing.*;
 import java.io.*;
 import java.text.SimpleDateFormat;
 import java.util.*;

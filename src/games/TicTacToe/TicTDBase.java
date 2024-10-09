@@ -1,6 +1,5 @@
 package games.TicTacToe;
 
-import java.io.Serializable;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -42,7 +41,7 @@ import tools.Types.ACTIONS;
  * 
  * @author Wolfgang Konen, TH Koeln, 2016
  */
-abstract public class TicTDBase  extends AgentBase implements Serializable {
+abstract public class TicTDBase  extends AgentBase {
 	private int[][] crosspoint_w;
 	private int[][] crosspoint_b;
 	private int featmode=2;		// 0,1,2,3,4,5,9 for 'Levkovich',thin,thick,rich,...,raw feature vector

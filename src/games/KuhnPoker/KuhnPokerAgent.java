@@ -1,7 +1,6 @@
 package games.KuhnPoker;
 
 import controllers.AgentBase;
-import controllers.PlayAgent;
 import games.StateObservation;
 import tools.Types;
 
@@ -15,7 +14,7 @@ import java.util.Random;
  * @author Tim Zeh, TH Koeln, 2021
  *
  */
-public class KuhnPokerAgent extends AgentBase implements PlayAgent {
+public class KuhnPokerAgent extends AgentBase  {
     private Random rand;
     private int[][] m_trainTable = null;
     private double[][] m_deltaTable = null;

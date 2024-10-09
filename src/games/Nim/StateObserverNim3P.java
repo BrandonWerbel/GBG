@@ -14,7 +14,7 @@ import tools.Types.ACTIONS;
  * See {@link GameBoardNim3P} for game rules: The player <b>who comes after</b> the player removing the last item 
  * is the player who wins. He/she gets reward 1, the other two get reward 0. See also {@link NimConfig#EXTRA_RULE}.
  */
-public class StateObserverNim3P extends StateObserverNim implements StateObservation {
+public class StateObserverNim3P extends StateObserverNim {
     
 	
 	/**

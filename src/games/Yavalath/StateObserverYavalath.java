@@ -1,7 +1,6 @@
 package games.Yavalath;
 
 import games.ObserverBase;
-import games.StateObservation;
 import tools.ScoreTuple;
 import tools.Types;
 
@@ -38,7 +37,7 @@ import static games.Yavalath.ConfigYavalath.*;
  *
  */
 
-public class StateObserverYavalath extends ObserverBase implements StateObservation {
+public class StateObserverYavalath extends ObserverBase {
 
     private ArrayList<Types.ACTIONS> availableActions;
     protected TileYavalath[][] board;
@@ -193,6 +192,7 @@ public class StateObserverYavalath extends ObserverBase implements StateObservat
                         information.updateGameInformation(-1,information.loser);
                     }
                 }
+                default -> throw new IllegalArgumentException("Unexpected value: " + info);
             }
         }
         currentPlayer = getNextPlayer();

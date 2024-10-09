@@ -4,8 +4,6 @@ import java.awt.BorderLayout;
 import java.awt.Frame;
 import java.awt.GridLayout;
 import java.io.Serial;
-import java.io.Serializable;
-
 import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
 import javax.swing.JLabel;
@@ -24,7 +22,7 @@ import controllers.TD.ntuple2.TDNTuple3Agt;
  *  @see TDNTuple3Agt
  *  @see SarsaAgt
  */
-public class NTParams extends Frame implements Serializable {
+public class NTParams extends Frame {
 	private static final String TIPTC = "whether to use Temporal Coherence (TC) or not";
 	private static final String TIPTCINIT = "initial value for TC accumulators N and A";
 	private static final String TIPTCTRANSFER = "transfer function for tcFactor: id or TC EXP";

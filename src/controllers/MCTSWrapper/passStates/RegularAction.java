@@ -65,7 +65,7 @@ public final class RegularAction implements ApplicableAction {
     public Tuple<Types.ACTIONS,StateObsNondeterministic> advanceNonDet(final StateObsNondeterministic so) {
         final var stateCopy = so.copy();
         final var r = stateCopy.advanceNondetSpecific(action);
-        return new Tuple( r, stateCopy);
+        return new Tuple<Types.ACTIONS,StateObsNondeterministic>( r, stateCopy);
     }
 
     /**

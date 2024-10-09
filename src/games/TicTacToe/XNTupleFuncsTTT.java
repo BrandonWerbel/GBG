@@ -1,7 +1,6 @@
 package games.TicTacToe;
 
 import java.io.Serial;
-import java.io.Serializable;
 import java.util.HashSet;
 
 import org.apache.commons.math3.exception.OutOfRangeException;
@@ -9,9 +8,8 @@ import org.apache.commons.math3.exception.OutOfRangeException;
 import games.BoardVector;
 import games.StateObservation;
 import games.XNTupleBase;
-import games.XNTupleFuncs;
 
-public class XNTupleFuncsTTT extends XNTupleBase implements XNTupleFuncs, Serializable {
+public class XNTupleFuncsTTT extends XNTupleBase {
 
     /**
      * change the version ID for serialization only if a newer version is no longer

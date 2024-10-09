@@ -1,7 +1,6 @@
 package games.RubiksCube;
 
 import java.io.Serial;
-import java.io.Serializable;
 import java.util.*;
 
 import controllers.TD.ntuple4.Sarsa4Agt;
@@ -17,7 +16,7 @@ import games.RubiksCube.CubeConfig.BoardVecType;
  * Implementation of methods needed for the n-tuple interface {@link XNTupleFuncs}
  * for the game RubiksCube
  */
-public class XNTupleFuncsCube extends XNTupleBase implements XNTupleFuncs, Serializable {
+public class XNTupleFuncsCube extends XNTupleBase {
 
 	// --- deprecated, we use CubeStateMap.allWholeCubeRots ---
 //	private final CubeStateMap hmRots = new CubeStateMap(CsMapType.AllWholeCubeRotTrafos);
@@ -348,6 +347,8 @@ public class XNTupleFuncsCube extends XNTupleBase implements XNTupleFuncs, Seria
 						// the 4 "ring" 8-tuples + the 2 lastAction-cells:
 						return new int[][]{ {15,14,9,8,0,3,22,21,24,25} ,{12,13,10,11,1,2,23,20,24,25},
 								{5,4,8,11,18,17,23,22,24,25},{ 6,7,9,10,19,16,20,21,24,25} };
+					default:
+						break;
 				}
 			case 1:
 				// 30 random, but fixed 7-tuples from theNtuple.txt

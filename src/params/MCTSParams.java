@@ -6,8 +6,6 @@ import java.awt.Frame;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.Serializable;
-
 import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
 import javax.swing.JLabel;
@@ -33,7 +31,7 @@ import controllers.MCTS.SingleMCTSPlayer;
  * @see MCTSAgentT
  * @see SingleMCTSPlayer
  */
-public class MCTSParams extends Frame implements Serializable
+public class MCTSParams extends Frame
 {
 	private static final String TIPNUMITERL = "Number of iterations during MCTS search";
 	private static final String TIPKUCTL = "Parameter K in UCT rule ";
@@ -66,7 +64,7 @@ public class MCTSParams extends Frame implements Serializable
 	JTextField rollout_T;
 	JTextField verbose_T;
 	JCheckBox normalize;
-	JComboBox choiceSelector;
+	JComboBox<String> choiceSelector;
 	JPanel mPanel;
 
 	/**
@@ -93,7 +91,7 @@ public class MCTSParams extends Frame implements Serializable
 		kUCT_T = new JTextField(ParMCTS.DEFAULT_K+"");					// 
 		epsGreedy_T = new JTextField(ParMCTS.DEFAULT_EPSILONGREEDY+"");					// 
 		normalize = new JCheckBox();
-		choiceSelector = new JComboBox(selTypeString);
+		choiceSelector = new JComboBox<String>(selTypeString);
 		choiceSelector.addActionListener(new ActionListener(){
 			@Override
 			public void actionPerformed(ActionEvent e) {

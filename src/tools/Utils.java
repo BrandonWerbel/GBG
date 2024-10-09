@@ -1,15 +1,9 @@
 package tools;
 
-import tools.Types;
-
-import java.awt.*;
 import java.io.File;
-import java.lang.reflect.Field;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.Random;
-import java.util.TreeMap;
 
 public class Utils
 {

@@ -209,7 +209,7 @@ public final class MctseChanceNode extends MctseNode {
      * @param histo a {@code Map<Integer, double[]>} that is modified in the EXPECTIMAX recursive call
      * @return the number of EXPECTIMAX nodes in this branch
      */
-    public int numChilds(Map histo) {
+    public int numChilds(Map<Integer, double[]> histo) {
         int numExpec = 0;       // do not count chance nodes
         for (Map.Entry<Integer, MctseNode> entry : childNodes.entrySet()) {
             if( entry.getValue() instanceof MctseExpecNode) {

@@ -15,7 +15,7 @@ import java.util.Random;
  * @author Wolfgang Konen, TH Koeln, 2016
  * 
  */
-public class RandomAgent extends AgentBase implements PlayAgent {
+public class RandomAgent extends AgentBase {
 	private Random rand;
 	private int[][] m_trainTable = null;
 	private double[][] m_deltaTable = null;

@@ -1,7 +1,5 @@
 package controllers.MCTSWrapper.utils;
 
-import games.Othello.BaseOthello;
-import games.Othello.StateObserverOthello;
 import games.StateObservation;
 
 /**

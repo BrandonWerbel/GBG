@@ -5,7 +5,6 @@ import java.text.DecimalFormat;
 
 import controllers.ExpectimaxNAgent;
 import controllers.MaxNAgent;
-import controllers.PlayAgent;
 import games.LogManager;
 import games.StateObservation;
 import games.Nim.BoutonAgent;

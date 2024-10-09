@@ -1,14 +1,11 @@
 package games.Poker;
 
 import games.Arena;
-import games.Othello.Gui.Legend;
 import tools.Types;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
 public class GameBoardPokerGuiOld extends JFrame {

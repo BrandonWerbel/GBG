@@ -3,14 +3,12 @@ package games.SimpleGame;
 import games.BoardVector;
 import games.StateObservation;
 import games.XNTupleBase;
-import games.XNTupleFuncs;
 import org.apache.commons.math3.exception.OutOfRangeException;
 
 import java.io.Serial;
-import java.io.Serializable;
 import java.util.HashSet;
 
-public class XNTupleFuncsSG extends XNTupleBase implements XNTupleFuncs, Serializable {
+public class XNTupleFuncsSG extends XNTupleBase {
 
     /**
      * change the version ID for serialization only if a newer version is no longer

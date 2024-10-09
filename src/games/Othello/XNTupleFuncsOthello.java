@@ -1,7 +1,6 @@
 package games.Othello;
 
 import java.io.Serial;
-import java.io.Serializable;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -16,7 +15,7 @@ import tools.Types;
 import tools.Types.ACTIONS;
 
 
-public class XNTupleFuncsOthello extends XNTupleBase implements XNTupleFuncs, Serializable {
+public class XNTupleFuncsOthello extends XNTupleBase {
 
 	private final static int[] fixedModes = {0, 1, 2, 3, 4, 5, 6};
 

@@ -3,12 +3,7 @@ package tools;
 import java.io.IOException;
 import java.lang.management.ManagementFactory;
 import java.lang.management.ThreadMXBean;
-import java.text.DecimalFormat;
 import java.time.Instant;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.ListIterator;
 
 /**
  *  A test class for different ways to measure time in Java

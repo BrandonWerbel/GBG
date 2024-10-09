@@ -2,16 +2,14 @@ package games.KuhnPoker;
 
 import controllers.PlayAgent;
 import games.Arena;
-import games.GameBoard;
 import games.GameBoardBase;
-import games.Hex.StateObserverHex;
 import games.StateObservation;
 import tools.Types;
 
 import java.util.ArrayList;
 import java.util.Random;
 
-public class GameBoardKuhnPoker extends GameBoardBase implements GameBoard {
+public class GameBoardKuhnPoker extends GameBoardBase {
 
 	protected Random rand;
 	//private transient GameBoardPokerGui m_gameGui = null;

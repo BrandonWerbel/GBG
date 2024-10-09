@@ -1,15 +1,13 @@
 package games.Nim;
 
-import java.io.Serializable;
 import java.util.HashSet;
 
 import games.BoardVector;
 import games.StateObservation;
 import games.XNTupleBase;
-import games.XNTupleFuncs;
 import org.apache.commons.math3.exception.OutOfRangeException;
 
-public class XNTupleFuncsNim2P extends XNTupleBase implements XNTupleFuncs, Serializable {
+public class XNTupleFuncsNim2P extends XNTupleBase {
 
     /**
      * change the version ID for serialization only if a newer version is no longer
@@ -202,8 +200,8 @@ public class XNTupleFuncsNim2P extends XNTupleBase implements XNTupleFuncs, Seri
 	 * 		a board vector) 
 	 * 
 	 */
-	public HashSet adjacencySet(int iCell) {
-		HashSet adjSet = new HashSet();
+	public HashSet<Integer> adjacencySet(int iCell) {
+		HashSet<Integer> adjSet = new HashSet<Integer>();
 		for (int i=0; i<NimConfig.NUMBER_HEAPS; i++) 
 			if (i!=iCell) adjSet.add(i);
 		

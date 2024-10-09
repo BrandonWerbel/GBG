@@ -1,14 +1,12 @@
 package games.CFour;
 
-import java.io.Serializable;
 import java.util.HashSet;
 
 import games.BoardVector;
 import games.StateObservation;
 import games.XNTupleBase;
-import games.XNTupleFuncs;
 
-public class XNTupleFuncsC4 extends XNTupleBase implements XNTupleFuncs, Serializable {
+public class XNTupleFuncsC4 extends XNTupleBase {
 
     /**
      * Provide a version UID here. Change the version ID for serialization only if a newer version 
@@ -270,7 +268,7 @@ public class XNTupleFuncsC4 extends XNTupleBase implements XNTupleFuncs, Seriali
 	 * 		a board vector) 
 	 * 
 	 */
-	public HashSet adjacencySet(int iCell) {
+	public HashSet<Integer> adjacencySet(int iCell) {
 		// used by NTupleFactory#generateRandomWalkNTuples()
 		//
 		int[] aList = new int[4];			// 4-point neighborhood
@@ -295,7 +293,7 @@ public class XNTupleFuncsC4 extends XNTupleBase implements XNTupleFuncs, Seriali
 //		int[] bList = new int[count];
 //		for (int i=0; i<count; i++) bList[i]=aList[i];
 		
-		HashSet adjSet = new HashSet();
+		HashSet<Integer> adjSet = new HashSet<Integer>();
 		for (int i=0; i<count; i++) adjSet.add(aList[i]);
 		
 		return adjSet;

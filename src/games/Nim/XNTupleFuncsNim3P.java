@@ -1,6 +1,5 @@
 package games.Nim;
 
-import java.io.Serializable;
 import java.util.HashSet;
 
 import games.BoardVector;
@@ -9,7 +8,7 @@ import games.XNTupleBase;
 import games.XNTupleFuncs;
 import controllers.TD.ntuple2.NTupleFactory;
 
-public class XNTupleFuncsNim3P extends XNTupleBase implements XNTupleFuncs, Serializable {
+public class XNTupleFuncsNim3P extends XNTupleBase {
 
     /**
      * change the version ID for serialization only if a newer version is no longer
@@ -183,8 +182,8 @@ public class XNTupleFuncsNim3P extends XNTupleBase implements XNTupleFuncs, Seri
 	 * 
 	 * @see NTupleFactory#generateRandomWalkNTuples(int,int,int,XNTupleFuncs)
 	 */
-	public HashSet adjacencySet(int iCell) {
-		HashSet adjSet = new HashSet();
+	public HashSet<Integer> adjacencySet(int iCell) {
+		HashSet<Integer> adjSet = new HashSet<Integer>();
 		for (int i=0; i<NimConfig.NUMBER_HEAPS; i++) 
 			if (i!=iCell) adjSet.add(i);
 		

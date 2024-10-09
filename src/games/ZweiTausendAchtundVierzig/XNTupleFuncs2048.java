@@ -1,14 +1,12 @@
 package games.ZweiTausendAchtundVierzig;
 
-import java.io.Serializable;
 import java.util.HashSet;
 
 import games.BoardVector;
 import games.StateObservation;
 import games.XNTupleBase;
-import games.XNTupleFuncs;
 
-public class XNTupleFuncs2048 extends XNTupleBase implements XNTupleFuncs, Serializable {
+public class XNTupleFuncs2048 extends XNTupleBase {
 
     /**
      * change the version ID for serialization only if a newer version is no longer
@@ -233,7 +231,7 @@ public class XNTupleFuncs2048 extends XNTupleBase implements XNTupleFuncs, Seria
 	 * @return a set of all cells adjacent to {@code iCell} (referring to the coding in 
 	 * 		a board vector) 
 	 */
-	public HashSet adjacencySet(int iCell) {
+	public HashSet<Integer> adjacencySet(int iCell) {
 		int[] aList = new int[4];			// 4-point neighborhood
 		int count=0;
 		
@@ -256,7 +254,7 @@ public class XNTupleFuncs2048 extends XNTupleBase implements XNTupleFuncs, Seria
 //		int[] bList = new int[count];
 //		for (int i=0; i<count; i++) bList[i]=aList[i];
 		
-		HashSet adjSet = new HashSet();
+		HashSet<Integer> adjSet = new HashSet<Integer>();
 		for (int i=0; i<count; i++) adjSet.add(aList[i]);
 		
 		

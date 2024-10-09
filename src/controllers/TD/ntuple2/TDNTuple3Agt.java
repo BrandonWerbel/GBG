@@ -2,7 +2,6 @@ package controllers.TD.ntuple2;
 
 import java.io.IOException;
 import java.io.Serial;
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -75,7 +74,7 @@ import games.Sim.StateObserverSim;
  * 
  * @author Wolfgang Konen, TH Koeln, 2018-2020
  */
-public class TDNTuple3Agt extends NTupleBase implements PlayAgent,NTupleAgt,Serializable {
+public class TDNTuple3Agt extends NTupleBase {
 	
 	private NTupleAgt.EligType m_elig;
 	

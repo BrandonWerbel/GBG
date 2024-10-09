@@ -1,7 +1,6 @@
 package games.Othello.Edax;
 
 import games.Othello.ConfigOthello;
-import tools.Types.ACTIONS_VT;
 
 public class EdaxMoveConverter 
 {

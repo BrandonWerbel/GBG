@@ -165,7 +165,7 @@ public class CubeStateMap extends Hashtable<Integer,CubeState> {
 		return set.size();
 	}
 	
-	public static int countDifferentStates(ArrayList D) {
+	public static int countDifferentStates(ArrayList<CubeState> D) {
 	    Iterator<CubeState> it1 = (Iterator<CubeState>) D.iterator();
 	    HashSet<CubeState> set = new HashSet<>();
 	    while (it1.hasNext()) {

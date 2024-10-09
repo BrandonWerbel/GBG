@@ -19,7 +19,7 @@ import java.util.Random;
  */
 public class SingleTreeNode implements Serializable 
 {
-	public static double epsilon = 1e-6; // tiebreaker
+	private double epsilon = 1e-6; // tiebreaker
 	public StateObservation m_state = null;
 	public SingleTreeNode parent = null;
 	public SingleTreeNode[] children = null;
@@ -33,7 +33,7 @@ public class SingleTreeNode implements Serializable
 	 */
 	public double totValue;
 	private int nVisits=0;
-	public static Random m_rnd = null;
+	private Random m_rnd = null;
 	private int m_depth;
 //	private static double[] lastBounds = new double[] { 0, 1 };
 //	private static double[] curBounds = new double[] { 0, 1 };

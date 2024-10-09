@@ -13,7 +13,6 @@ import tools.Types.ACTIONS;
 import tools.Types.ACTIONS_VT;
 
 import java.io.Serial;
-import java.io.Serializable;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -34,7 +33,7 @@ import java.util.Random;
  * @see MaxNAgent
  * @see ExpectimaxNWrapper
  */
-public class ExpectimaxNAgent extends AgentBase implements PlayAgent, Serializable
+public class ExpectimaxNAgent extends AgentBase
 {
 	/**
 	 * If {@code PARTIAL_IN_RECURSION==true}, form a partial state before starting the recursion in

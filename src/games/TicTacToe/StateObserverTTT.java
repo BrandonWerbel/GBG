@@ -21,7 +21,7 @@ import tools.Types.ACTIONS;
  * </ul>
  *
  */
-public class StateObserverTTT extends ObserverBase implements StateObservation {
+public class StateObserverTTT extends ObserverBase {
     private static final double REWARD_NEGATIVE = -1.0;
     private static final double REWARD_POSITIVE =  1.0;
 	private int[][] m_Table;		// current board position

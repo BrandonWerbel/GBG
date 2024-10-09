@@ -323,24 +323,24 @@ abstract public class CubeState implements Serializable {
 	}
 
 	/**
-	 * Whole-cube rotation 90° counter-clockwise around the u-face
+	 * Whole-cube rotation 90ï¿½ counter-clockwise around the u-face
 	 */
 	abstract protected CubeState uTr();
 
 	/**
-	 * Whole-cube rotation 90° counter-clockwise around the f-face
+	 * Whole-cube rotation 90ï¿½ counter-clockwise around the f-face
 	 */
 	abstract protected CubeState fTr();
 
 	/**	
-	 * Whole-cube rotation 90° counter-clockwise around the l-face
+	 * Whole-cube rotation 90ï¿½ counter-clockwise around the l-face
 	 */
 	protected CubeState lTr() {
 		return this.fTr().uTr(3).fTr(3);
 	}
 	
 	/**
-	 * Whole-cube rotation, {@code times} * 90° counter-clockwise around the u-face
+	 * Whole-cube rotation, {@code times} * 90ï¿½ counter-clockwise around the u-face
 	 */
 	public CubeState uTr(int times) {
 		for (int i=0; i<times; i++) this.uTr();
@@ -348,7 +348,7 @@ abstract public class CubeState implements Serializable {
 	}
 	
 	/**
-	 * Whole-cube rotation, {@code times} * 90° counter-clockwise around the l-face
+	 * Whole-cube rotation, {@code times} * 90ï¿½ counter-clockwise around the l-face
 	 */
 	public CubeState lTr(int times) {
 		for (int i=0; i<times; i++) this.lTr();
@@ -356,7 +356,7 @@ abstract public class CubeState implements Serializable {
 	}
 	
 	/**
-	 * Whole-cube rotation, {@code times} * 90° counter-clockwise around the f-face
+	 * Whole-cube rotation, {@code times} * 90ï¿½ counter-clockwise around the f-face
 	 */
 	public CubeState fTr(int times) {
 		for (int i=0; i<times; i++) this.fTr();
@@ -847,6 +847,7 @@ abstract public class CubeState implements Serializable {
 				case D -> tst.DTw(times);
 				case R -> tst.RTw(times);
 				case B -> tst.BTw(times);
+				default -> throw new IllegalArgumentException("Unexpected value: " + T);
 			}
 			tw =  (tw.length()>2) ? tw.substring(2,tw.length()) : "";				
 		}

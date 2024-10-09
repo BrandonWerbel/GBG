@@ -35,7 +35,7 @@ import static tools.Types.WINNER.*;
  * <li> signaling end, score and winner of the game
  * </ul>
  */
-public class StateObserverEWN extends ObsNondetBase implements  StateObsNondeterministic {
+public class StateObserverEWN extends ObsNondetBase {
 
     private static final double REWARD_NEGATIVE = -1, REWARD_POSITIVE = 1;
     private int numPlayers; // /WK/ really needed? will be always =ConfigEWN.NUM_PLAYERS
@@ -542,6 +542,8 @@ public class StateObserverEWN extends ObsNondetBase implements  StateObsNondeter
                 case PLAYER_WINS:
                     return REWARD_POSITIVE;
                 case TIE:  throw new RuntimeException("invalid outcome of the game [EWN cannot end in a tie]");
+                default:
+                    break;
             }
         }
         return 0.0;

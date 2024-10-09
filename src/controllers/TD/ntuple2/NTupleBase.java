@@ -3,7 +3,6 @@ package controllers.TD.ntuple2;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.io.Serializable;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.Locale;
@@ -24,7 +23,7 @@ import params.ParTD;
  *	@see SarsaAgt
  *	@see TDNTuple3Agt
  */
-abstract public class NTupleBase extends AgentBase implements NTupleAgt, Serializable {
+abstract public class NTupleBase extends AgentBase implements NTupleAgt {
 	public Random rand; // generate random Numbers
 	
 	/**

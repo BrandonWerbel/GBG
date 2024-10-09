@@ -1,7 +1,6 @@
 package controllers.TD.ntuple4;
 
 import java.io.Serial;
-import java.io.Serializable;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
@@ -52,7 +51,7 @@ import games.Sim.StateObserverSim;
  *
  * @author Wolfgang Konen, TH Koeln, 2020
  */
-public class TDNTuple4Agt extends NTuple4Base implements PlayAgent, NTuple4Agt,Serializable {
+public class TDNTuple4Agt extends NTuple4Base {
 
 	private NTuple4Agt.EligType m_elig;
 

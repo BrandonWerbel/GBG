@@ -1,7 +1,5 @@
 package games.BlackJack;
 
-import java.util.ArrayList;
-
 
 /**
  * Wraps an action and a button. This simplifies the assignement of an evaluation value made from an agent for this action.

@@ -27,7 +27,7 @@ import tools.Types.ACTIONS;
  *
  * @see CubeConfig
  */
-public class StateObserverCube extends ObserverBase implements StateObservation {
+public class StateObserverCube extends ObserverBase {
 	/**
 	 * the inner cube state
 	 */

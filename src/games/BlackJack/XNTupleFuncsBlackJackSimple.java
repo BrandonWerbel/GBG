@@ -1,13 +1,11 @@
 package games.BlackJack;
 
-import java.io.Serializable;
 import java.util.HashSet;
 import games.BoardVector;
 import games.StateObservation;
 import games.XNTupleBase;
-import games.XNTupleFuncs;
 
-public class XNTupleFuncsBlackJackSimple extends XNTupleBase implements XNTupleFuncs, Serializable {
+public class XNTupleFuncsBlackJackSimple extends XNTupleBase {
 
 
     public XNTupleFuncsBlackJackSimple() {

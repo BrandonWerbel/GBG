@@ -5,21 +5,17 @@ import games.Arena;
 import games.EWN.StateObserverHelper.Helper;
 import games.EWN.config.ConfigEWN;
 import games.EWN.gui.GameBoardGuiEWN;
-import games.GameBoard;
 import games.GameBoardBase;
-import games.Othello.ConfigOthello;
 import games.StateObservation;
-import games.TicTacToe.StateObserverTTT;
 import tools.Types;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.Random;
 
 /**
  * GameBoardEWN contains the 'game-theoretic' part of the game board. See {@link GameBoardGuiEWN} for the GUI.
  */
-public class GameBoardEWN extends GameBoardBase implements GameBoard {
+public class GameBoardEWN extends GameBoardBase {
 
     /**
      * Serialnumber

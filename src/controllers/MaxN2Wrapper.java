@@ -1,7 +1,6 @@
 package controllers;
 
 import java.io.Serial;
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -21,7 +20,7 @@ import tools.Types.ACTIONS_VT;
  * 
  * @author Wolfgang Konen, TH Koeln, 2020
  */
-public class MaxN2Wrapper extends AgentBase implements PlayAgent, Serializable {
+public class MaxN2Wrapper extends AgentBase {
 	private final PlayAgent wrapped_pa;
 	
 	private final Random rand;

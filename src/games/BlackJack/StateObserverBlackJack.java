@@ -13,7 +13,7 @@ import tools.Types.ACTIONS;
 import tools.Types;
 import static games.BlackJack.BlackJackConfig.*;
 
-public class StateObserverBlackJack extends ObsNondetBase implements StateObsNondeterministic {
+public class StateObserverBlackJack extends ObsNondetBase {
 
 
     @Serial

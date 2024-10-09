@@ -1540,6 +1540,8 @@ abstract public class Arena implements Runnable {
 //			InspectNtup();
 //			state = Task.IDLE;
 //			break;
+				default:
+					break;
 
 			}
 		}

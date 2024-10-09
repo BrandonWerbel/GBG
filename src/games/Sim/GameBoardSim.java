@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Random;
 
 import controllers.PlayAgent;
-import games.GameBoard;
 import games.GameBoardBase;
 import games.StateObservation;
 import games.Othello.Gui.GameBoardOthelloGui;
@@ -25,7 +24,7 @@ import games.Arena;
  * 
  * @author Percy Wuensch, Wolfgang Konen, TH Koeln, 2019-2020
  */
-public class GameBoardSim extends GameBoardBase implements GameBoard {
+public class GameBoardSim extends GameBoardBase {
 
 	/**
 	 * SerialNumber

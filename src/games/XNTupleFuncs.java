@@ -13,7 +13,6 @@ import controllers.TD.ntuple4.Sarsa4Agt;
 import controllers.TD.ntuple4.TDNTuple4Agt;
 import controllers.TD.ntuple4.NTuple4ValueFunc;
 import controllers.TD.ntuple4.QLearn4Agt;
-import controllers.TD.ntuple4.Sarsa4Agt;
 
 
 /**
@@ -170,5 +169,5 @@ public interface XNTupleFuncs {
 	 * @return a list of all cells adjacent to {@code iCell} (referring to the coding in 
 	 * 		a board vector) 
 	 */
-	HashSet adjacencySet(int iCell);
+	HashSet<Integer> adjacencySet(int iCell);
 }

@@ -2,7 +2,6 @@ package games.ZweiTausendAchtundVierzig;
 
 import controllers.TD.ntuple2.NTupleBase;
 import games.*;
-import games.EWN.StateObserverEWN;
 import games.ZweiTausendAchtundVierzig.Heuristic.HeuristicSettings2048;
 import tools.Types;
 import tools.Types.ACTIONS;
@@ -38,7 +37,7 @@ import java.util.Random;
  * @author Wolfgang Konen, TH Koeln
  * @author Johannes Kutsch
  */
-public class StateObserver2048 extends ObsNondetBase implements StateObsNondeterministic {
+public class StateObserver2048 extends ObsNondetBase {
 	public static final String[] ACTIONSTRING = {" left", "   up", "right", " down"};
     private Random random = new Random();
     protected ArrayList<Integer> emptyTiles = new ArrayList<>();

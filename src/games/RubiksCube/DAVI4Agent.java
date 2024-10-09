@@ -25,7 +25,7 @@ import java.util.List;
  *  it follows their ADI method (Autodidactic iteration).
  *
  */
-public class DAVI4Agent extends DAVI3Agent implements PlayAgent {
+public class DAVI4Agent extends DAVI3Agent {
 
 	/**
 	 *  Flag for the training set generation process: <br>

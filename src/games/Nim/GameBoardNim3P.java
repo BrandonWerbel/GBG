@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import java.util.Random;
 
 import controllers.PlayAgent;
-import games.GameBoard;
 import games.StateObservation;
 import games.Arena;
 import tools.Types;
@@ -32,7 +31,7 @@ import tools.Types;
  * 
  * @author Wolfgang Konen, TH Koeln, 2020
  */
-public class GameBoardNim3P extends GameBoardNimBase implements GameBoard {
+public class GameBoardNim3P extends GameBoardNimBase {
 
 	protected StateObserverNim3P m_so;
 	protected Random rand;

@@ -3,13 +3,11 @@ package games.Yavalath;
 import games.BoardVector;
 import games.StateObservation;
 import games.XNTupleBase;
-import games.XNTupleFuncs;
 import tools.Types;
 
-import java.io.Serializable;
 import java.util.HashSet;
 
-public class XNTupleFuncsYavalath extends XNTupleBase implements XNTupleFuncs, Serializable {
+public class XNTupleFuncsYavalath extends XNTupleBase {
 
     private int[] actionVector;
     private int[][] actionArray;
@@ -154,9 +152,9 @@ public class XNTupleFuncsYavalath extends XNTupleBase implements XNTupleFuncs, S
     }
 
     @Override
-    public HashSet adjacencySet(int iCell) {
+    public HashSet<Integer> adjacencySet(int iCell) {
 
-        HashSet adjSet = new HashSet();
+        HashSet<Integer> adjSet = new HashSet<Integer>();
 
         int maxRowLength = ConfigYavalath.getMaxRowLength();
 

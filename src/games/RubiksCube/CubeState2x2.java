@@ -3,7 +3,6 @@ package games.RubiksCube;
 import games.BoardVector;
 
 import java.io.Serial;
-import java.util.Map;
 
 /**
  * See {@link CubeState} for class description

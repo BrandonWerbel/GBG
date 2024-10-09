@@ -9,7 +9,6 @@ import controllers.PlayAgent;
 import controllers.RandomAgent;
 import games.Arena;
 import games.ObserverBase;
-import games.StateObservation;
 import games.Sim.Gui.BoardPanel;
 import tools.Types.ACTIONS;
 import tools.Types;
@@ -49,7 +48,7 @@ import tools.Types;
  *  @author Wolfgang Konen, TH Koeln, 2020
  *
  */
-public class StateObserverSim extends ObserverBase implements StateObservation {
+public class StateObserverSim extends ObserverBase {
 	private int numNodes;
 	private int numPlayers;
 	private int player;			// 0,1 in 2-player variant;   0,1,2 in 3-player variant

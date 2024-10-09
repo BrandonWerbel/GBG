@@ -1,7 +1,6 @@
 package games.Hex;
 
 import games.Arena;
-import games.GameBoard;
 import games.GameBoardBase;
 import games.StateObservation;
 import tools.Types;
@@ -22,7 +21,7 @@ import static games.Hex.HexConfig.PLAYER_TWO;
  * 
  * @author Kevin Galitzki, TH Koeln, 2018
  */
-public class GameBoardHex extends GameBoardBase implements GameBoard {
+public class GameBoardHex extends GameBoardBase {
     protected StateObserverHex m_so;
     protected Random rand;
     final boolean verbose = false;

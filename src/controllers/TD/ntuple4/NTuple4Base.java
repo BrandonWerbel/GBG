@@ -21,7 +21,7 @@ import params.*;
  *	@see Sarsa4Agt
  *	@see TDNTuple4Agt
  */
-abstract public class NTuple4Base extends AgentBase implements NTuple4Agt, Serializable {
+abstract public class NTuple4Base extends AgentBase implements NTuple4Agt {
 	public Random rand; // generate random Numbers
 	
 	/**

@@ -1,7 +1,6 @@
 package controllers.MCTSExpectimax;
 
 import controllers.AgentBase;
-import controllers.PlayAgent;
 import controllers.MCTS.MCTSAgentT;
 import games.Arena;
 import games.StateObservation;
@@ -24,7 +23,7 @@ import java.util.Random;
  * 
  * @see MCTSAgentT MCTSAgentT for deterministic games
  */
-public class MCTSExpectimaxAgt extends AgentBase implements PlayAgent
+public class MCTSExpectimaxAgt extends AgentBase
 {
 	public ParMCTSE params;
     private MCTSEPlayer player;

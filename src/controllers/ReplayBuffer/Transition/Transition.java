@@ -1,14 +1,8 @@
 package controllers.ReplayBuffer.Transition;
 
 import controllers.TD.ntuple4.NextState4;
-import game.functions.ints.state.Next;
-import game.functions.ints.state.Score;
-import game.functions.ints.state.State;
-import games.StateObsWithBoardVector;
 import games.StateObservation;
-import games.TicTacToe.StateObserverTTT;
 import tools.ScoreTuple;
-import tools.Types;
 
 public class Transition implements ITransition {
 

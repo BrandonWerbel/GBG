@@ -1,7 +1,5 @@
 package games.Poker;
 
-import game.equipment.component.Card;
-
 import javax.swing.*;
 import java.awt.*;
 

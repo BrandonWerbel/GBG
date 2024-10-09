@@ -5,7 +5,6 @@ import java.util.HashMap;
 import java.util.Random;
 
 import controllers.AgentBase;
-import controllers.PlayAgent;
 import games.StateObservation;
 import params.ParOther;
 import tools.ScoreTuple;
@@ -24,7 +23,7 @@ import tools.Types.ACTIONS_VT;
  *  Only the solved cube s* has V(s*)=0.
  *
  */
-public class DaviNimAgent extends AgentBase implements PlayAgent {
+public class DaviNimAgent extends AgentBase {
 
 	private static final long serialVersionUID = 12L;
 

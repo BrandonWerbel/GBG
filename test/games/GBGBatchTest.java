@@ -3,7 +3,6 @@ package games;
 import controllers.PlayAgent;
 import org.junit.Test;
 import starters.GBGBatch;
-import starters.MTrainSweep;
 import starters.SetupGBG;
 
 import java.io.IOException;

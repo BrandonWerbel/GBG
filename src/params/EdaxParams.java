@@ -3,13 +3,8 @@ package params;
 import java.awt.BorderLayout;
 import java.awt.Button;
 import java.awt.Canvas;
-import java.awt.Checkbox;
-import java.awt.CheckboxGroup;
-import java.awt.Choice;
-import java.awt.Color;
 import java.awt.Frame;
 import java.awt.GridLayout;
-import java.awt.Label;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -17,9 +12,6 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-import controllers.TD.TDAgent;
-import controllers.TD.ntuple2.TDNTuple3Agt;
-import games.Feature;
 import games.Othello.Edax.Edax2;
 
 /**

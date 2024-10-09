@@ -2,7 +2,6 @@ package games.Yavalath;
 
 import controllers.PlayAgent;
 import games.Arena;
-import games.GameBoard;
 import games.GameBoardBase;
 import games.StateObservation;
 import games.Yavalath.GUI.GameBoardGUIYavalath;
@@ -12,7 +11,7 @@ import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class GameBoardYavalath extends GameBoardBase implements GameBoard {
+public class GameBoardYavalath extends GameBoardBase {
 
     public StateObserverYavalath m_so;
     private GameBoardGUIYavalath gb_gui;

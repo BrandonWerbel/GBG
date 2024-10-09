@@ -1,7 +1,6 @@
 package games.ZweiTausendAchtundVierzig;
 
 import games.Arena;
-import games.GameBoard;
 import games.GameBoardBase;
 import games.StateObservation;
 import tools.Types;
@@ -22,7 +21,7 @@ import java.util.Random;
  * 
  * @author Johannes Kutsch, Wolfgang Konen, TH Koeln, 2016-2020
  */
-public class GameBoard2048 extends GameBoardBase implements GameBoard {
+public class GameBoard2048 extends GameBoardBase {
     protected StateObserver2048 m_so;
 	private transient GameBoard2048Gui m_gameGui = null;
 

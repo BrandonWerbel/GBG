@@ -1,7 +1,6 @@
 package games.CFour;
 
 import java.io.Serial;
-import java.io.Serializable;
 import java.util.Arrays;
 
 import controllers.AgentBase;
@@ -32,7 +31,7 @@ import tools.Types.ACTIONS_VT;
  * @author Markus Thill
  * 
  */
-public class C4Base extends AgentBase implements Serializable {
+public class C4Base extends AgentBase {
 
 	/**
 	 * Constants for both player

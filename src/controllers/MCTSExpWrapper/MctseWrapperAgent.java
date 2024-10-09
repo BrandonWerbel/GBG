@@ -11,7 +11,6 @@ import params.ParOther;
 import tools.ScoreTuple;
 import tools.Types;
 
-import java.io.Serializable;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Map;
@@ -20,7 +19,7 @@ import java.util.Map;
  * PlayAgent that performs a Monte Carlo Tree Search Expectimax (MCTSE) to calculate the next action to be selected.
  * This agent wraps an approximator, which is used to evaluate game states in MCTSE simulations.
  */
-public final class MctseWrapperAgent extends AgentBase implements PlayAgent, Serializable {
+public final class MctseWrapperAgent extends AgentBase {
     private final int iterations;
     private final Mctse mcts;
     private final Approximator2 approximator;

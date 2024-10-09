@@ -9,7 +9,6 @@ import tools.Types.ACTIONS;
 import tools.Types.ACTIONS_VT;
 
 import java.io.Serial;
-import java.io.Serializable;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
@@ -25,7 +24,7 @@ import java.util.Random;
  * 
  * @see ExpectimaxNWrapper
  */
-public class ExpectimaxN2Wrapper extends AgentBase implements PlayAgent, Serializable
+public class ExpectimaxN2Wrapper extends AgentBase
 {
 	private Random rand;
 	protected int m_depth=10;

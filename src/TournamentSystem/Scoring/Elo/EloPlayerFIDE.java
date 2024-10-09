@@ -1,7 +1,5 @@
 package TournamentSystem.Scoring.Elo;
 
-import java.io.Serializable;
-
 /**
  * This class holds the FIDE implementation of the k factor determination. For the USCF determination see {@link EloPlayerUSCF}.
  * Use the static {@link EloCalculator} class to calculate the new Elo's after a match.
@@ -10,7 +8,7 @@ import java.io.Serializable;
  *
  * @author Felix Barsnick, Cologne University of Applied Sciences, 2018
  */
-public class EloPlayerFIDE extends EloPlayer implements Serializable {
+public class EloPlayerFIDE extends EloPlayer {
     /**
      * change the version ID for serialization only if a newer version is no longer
      * compatible with an older one (older .tsr.zip will become unreadable or you have

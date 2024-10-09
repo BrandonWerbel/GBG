@@ -7,8 +7,6 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.ListIterator;
 
-import static org.junit.Assert.*;
-
 /**
  *  A test class: Given class Items with a key and a value, we want to check in
  *  a set of Items whether it contains an item which is the same as a certain Item.
@@ -54,8 +52,8 @@ public class CompareItemsTest {
         }
     } //class Items
 
-    public boolean containsState(HashSet itemSet, Items arg0) {
-        Iterator it = itemSet.iterator();
+    public boolean containsState(HashSet<Items> itemSet, Items arg0) {
+        Iterator<Items> it = itemSet.iterator();
         while (it.hasNext()) {
             if (((Items) it.next()).isEqualTo(arg0))
                 return true;
@@ -63,8 +61,8 @@ public class CompareItemsTest {
         return false;
     }
 
-    public boolean containsState2(HashSet itemSet, Items arg0) {
-        Iterator it = itemSet.iterator();
+    public boolean containsState2(HashSet<Items> itemSet, Items arg0) {
+        Iterator<Items> it = itemSet.iterator();
         while (it.hasNext()) {
             if (((Items) it.next()).equals(arg0))
                 return true;
@@ -85,7 +83,7 @@ public class CompareItemsTest {
     public void testContains() {
         String str;
 
-        HashSet itemSet = new HashSet();
+        HashSet<Items> itemSet = new HashSet<Items>();
         itemSet.add(it1);
         itemSet.add(it2);
         itemSet.add(it3);
@@ -148,7 +146,7 @@ public class CompareItemsTest {
         // this is just a test function for the LinkedList part in NTuple2ValueFunc
 
         int horizon = 2;
-        LinkedList sList = new LinkedList();
+        LinkedList<Integer> sList = new LinkedList<Integer>();
         sList.clear();
         Integer elem;    // Integer object is just a surrogate for the afterstate object s'_t
 

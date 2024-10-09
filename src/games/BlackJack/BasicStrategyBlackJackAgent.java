@@ -3,7 +3,6 @@ package games.BlackJack;
 import controllers.AgentBase;
 import controllers.MC.MCAgentConfig;
 import controllers.MC.RandomSearch;
-import controllers.PlayAgent;
 import games.StateObservation;
 import params.ParMC;
 import tools.Types;
@@ -11,7 +10,7 @@ import tools.Types;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class BasicStrategyBlackJackAgent extends AgentBase implements PlayAgent {
+public class BasicStrategyBlackJackAgent extends AgentBase {
 
 
     /**

@@ -2,7 +2,6 @@ package params;
 
 import java.awt.*;
 import java.io.Serial;
-import java.io.Serializable;
 import java.util.Objects;
 
 import javax.swing.JCheckBox;
@@ -33,7 +32,7 @@ import games.Arena;
  * @see TDAgent
  * @see TDNTuple3Agt
  */
-public class TDParams extends Frame implements Serializable
+public class TDParams extends Frame
 {
 	private static final String TIPGAMMAL = "Discount factor in range [0,1] ";
 	private static final String TIPEPOCHL = "Only TDS: Accumulate gradient for Epochs iterations, then update weights";

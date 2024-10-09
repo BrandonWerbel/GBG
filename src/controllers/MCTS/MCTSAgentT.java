@@ -3,7 +3,6 @@ package controllers.MCTS;
 import controllers.AgentBase;
 import controllers.ExpectimaxNWrapper;
 import controllers.MaxN2Wrapper;
-import controllers.PlayAgent;
 import controllers.MCTSExpectimax.MCTSExpectimaxAgt;
 import games.Arena;
 import games.StateObservation;
@@ -14,7 +13,6 @@ import tools.ElapsedCpuTimer.TimerType;
 import tools.ScoreTuple;
 import tools.Types;
 
-import java.io.Serializable;
 import java.util.List;
 import java.util.Random;
 
@@ -32,7 +30,7 @@ import java.util.Random;
  * 
  * @see MCTSExpectimaxAgt MCTSExpectimaxAgt for non-deterministic games
  */
-public class MCTSAgentT extends AgentBase implements PlayAgent, Serializable 
+public class MCTSAgentT extends AgentBase
 { 
     private transient ElapsedCpuTimer m_Timer;
     

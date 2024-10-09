@@ -5,7 +5,6 @@ import java.io.Serializable;
 import java.util.*;
 
 import agentIO.LoadSaveGBG;
-import controllers.PlayAgent;
 import controllers.TD.ntuple4.NTuple4Base;
 import controllers.TD.ntuple4.NTuple4ValueFunc;
 import controllers.TD.ntuple4.NextState4;
@@ -34,7 +33,7 @@ import tools.Types.ACTIONS_VT;
  *  Only the solved cube s* has V(s*)=0.
  *
  */
-public class DAVI3Agent extends NTuple4Base implements PlayAgent {
+public class DAVI3Agent extends NTuple4Base {
 
 	protected static final StateObserverCube def = new StateObserverCube();   // default (solved) cube
 

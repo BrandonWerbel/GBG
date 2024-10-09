@@ -2,7 +2,6 @@ package controllers.TD.ntuple2;
 
 import java.io.IOException;
 import java.io.Serial;
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.ListIterator;
@@ -70,7 +69,7 @@ import games.XNTupleFuncs;
  * 
  * @author Wolfgang Konen, TH Koeln, Dec'18
  */
-public class SarsaAgt extends NTupleBase implements PlayAgent,NTupleAgt,Serializable {
+public class SarsaAgt extends NTupleBase {
 	
 	private NTupleAgt.EligType m_elig;
 	

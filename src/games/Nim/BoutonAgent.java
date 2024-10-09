@@ -5,7 +5,6 @@ import java.util.List;
 import java.util.Random;
 
 import controllers.AgentBase;
-import controllers.PlayAgent;
 import games.StateObservation;
 import tools.ScoreTuple;
 import tools.Types;
@@ -19,7 +18,7 @@ import tools.Types.ACTIONS_VT;
  *  {@link StateObserverNim#boutonValue(int[])}.
  *
  */
-public class BoutonAgent extends AgentBase implements PlayAgent {
+public class BoutonAgent extends AgentBase {
 
 	private static final long serialVersionUID = 12L;
 

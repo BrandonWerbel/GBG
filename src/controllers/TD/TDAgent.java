@@ -1,7 +1,6 @@
 package controllers.TD;
 
 import java.io.Serial;
-import java.io.Serializable;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.*;
@@ -36,7 +35,7 @@ import games.StateObservation;
  * @author Wolfgang Konen, TH Koeln, 2016
  */
 //abstract 
-public class TDAgent extends AgentBase implements PlayAgent,Serializable {
+public class TDAgent extends AgentBase {
 	protected TD_func m_Net;
 	/**
 	 * Controls the amount of explorative moves in
@@ -749,7 +748,7 @@ public class TDAgent extends AgentBase implements PlayAgent,Serializable {
 		if (NORMALIZE) {
 			// Normalize to [0,+1] (the appropriate range for Fermi-fct-sigmoid)
 			// or to [-1,+1] (the appropriate range for tanh-sigmoid):
-			double lower = (m_Net.FERMI_FCT ? 0.0 : -1.0);
+			double lower = (TD_func.FERMI_FCT ? 0.0 : -1.0);
 			double upper = 1.0;
 			
 			score = normalize(score,so.getMinGameScore(),

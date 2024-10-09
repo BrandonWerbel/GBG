@@ -4,9 +4,6 @@ import TournamentSystem.jheatchart.HeatChart;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.concurrent.ThreadLocalRandom;
 
 /**

@@ -4,8 +4,6 @@ import java.util.ArrayList;
 import java.util.Random;
 
 import controllers.PlayAgent;
-import games.EWN.StateObserverEWN;
-import games.GameBoard;
 import games.GameBoardBase;
 import games.StateObservation;
 import games.Arena;
@@ -24,7 +22,7 @@ import tools.Types;
  * @author Wolfgang Konen, TH Koeln, May'18
  *
  */
-public class GameBoardC4 extends GameBoardBase implements GameBoard {
+public class GameBoardC4 extends GameBoardBase {
 
 	protected Arena  m_Arena;		// a reference to the Arena object, needed to 
 									// infer the current taskState

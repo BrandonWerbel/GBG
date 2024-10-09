@@ -1,13 +1,11 @@
 package games.CFour;
 
-import java.io.Serializable;
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.Semaphore;
 
 import agentIO.LoadSaveGBG;
 import controllers.AgentBase;
-import controllers.PlayAgent;
 import games.StateObservation;
 //import nTupleTD.TDSAgent;
 import games.CFour.openingBook.BookSum;
@@ -34,7 +32,7 @@ import tools.Types.ACTIONS_VT;
  * @author Markus Thill
  * 
  */
-public class AlphaBetaAgent extends C4Base implements Serializable, PlayAgent {
+public class AlphaBetaAgent extends C4Base {
 	private static final long serialVersionUID = 5000820077350196867L;
 
 	// sigfac is relevant, if getNextVTable is called with useSigmoid=true, as it is done currently 
@@ -1822,7 +1820,7 @@ public class AlphaBetaAgent extends C4Base implements Serializable, PlayAgent {
 	 * @return column for creating a odd-threat, or else -1
 	 */
 	protected int findOddThreatP1(int startWith) {
-		// Diese Methode sucht nach ungeraden Drohung, JEDOCH nur für den
+		// Diese Methode sucht nach ungeraden Drohung, JEDOCH nur fï¿½r den
 		// Anziehenden
 		switch (startWith) {
 		case 0:
@@ -3225,8 +3223,8 @@ public class AlphaBetaAgent extends C4Base implements Serializable, PlayAgent {
 		int[] drlt = new int[1];
 		int value = 0;
 
-		if (symPos) // War beim letzten Zug eine symmetrische Stellung möglich
-			if ((symPos = symPossible())) // ist immer noch eine möglich
+		if (symPos) // War beim letzten Zug eine symmetrische Stellung mï¿½glich
+			if ((symPos = symPossible())) // ist immer noch eine mï¿½glich
 				if (isSymmetric()) { // liegt eine echte Symmetrie vor
 					// Nur eine Seite des Spielfeldes muss ausprobiert werden
 					int tmp[] = new int[8];
@@ -3275,7 +3273,7 @@ public class AlphaBetaAgent extends C4Base implements Serializable, PlayAgent {
 				colHeight[moves[x]]--;
 			}
 		} else {
-			// Nach Doppeldrohungen suchen, die direkt übereinander sind
+			// Nach Doppeldrohungen suchen, die direkt ï¿½bereinander sind
 			for (x = 0; moves[x] != -1; x++) {
 				if (colHeight[moves[x]] < 4) {
 					colHeight[moves[x]]++;
@@ -3919,7 +3917,7 @@ public class AlphaBetaAgent extends C4Base implements Serializable, PlayAgent {
 		long threatsP1 = 0L, threatsP2 = 0L;
 
 		// Ermittlung aller Drohungen beider Spieler!
-		// Außerdem Spalten markieren, in denen Drohungen
+		// Auï¿½erdem Spalten markieren, in denen Drohungen
 		// vorhanden sind!
 		for (byte i = 0; i < COLCOUNT; i++) {
 			y = colHeight[i];
@@ -3945,7 +3943,7 @@ public class AlphaBetaAgent extends C4Base implements Serializable, PlayAgent {
 			}
 		}
 
-		// Prüfen, wie viele Drohungen vorhanden sind
+		// Prï¿½fen, wie viele Drohungen vorhanden sind
 		// und bei 0,1 oder 2 Drohungen Bewertung der
 		// Stellung ermitteln
 		switch (numThreats) {

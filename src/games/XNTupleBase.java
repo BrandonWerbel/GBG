@@ -124,6 +124,6 @@ abstract public class XNTupleBase implements Serializable, XNTupleFuncs {
 	abstract public int[] fixedNTupleModesAvailable();
 
 	@Override
-	abstract public HashSet adjacencySet(int iCell);
+	abstract public HashSet<Integer> adjacencySet(int iCell);
 
 }

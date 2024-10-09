@@ -2,14 +2,10 @@ package games.Poker;
 
 import games.BoardVector;
 import games.StateObservation;
-import games.XNTupleBase;
-import games.XNTupleFuncs;
-
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashSet;
 
-public class XNTupleFuncsPokerSummary extends XNTuplePoker implements XNTupleFuncs, Serializable {
+public class XNTupleFuncsPokerSummary extends XNTuplePoker {
 
 	/**
 	 * change the version ID for serialization only if a newer version is no longer
@@ -103,7 +99,7 @@ public class XNTupleFuncsPokerSummary extends XNTuplePoker implements XNTupleFun
 		hand.connected = maxConnected;
 
 		// check for pairs
-		ArrayList[] multiples = checkForMultiples(ranks);
+		ArrayList<Integer>[] multiples = checkForMultiples(ranks);
 		hand.pairs = multiples[0];
 		hand.triples = multiples[1];
 		hand.four = multiples[2];
@@ -318,7 +314,7 @@ public class XNTupleFuncsPokerSummary extends XNTuplePoker implements XNTupleFun
 	}
 
 	@Override
-	public HashSet adjacencySet(int iCell) {
+	public HashSet<Integer> adjacencySet(int iCell) {
 		HashSet<Integer> adjacencySet = new HashSet<>();
 		for(int x=0;x<getNumCells();x++)
 			adjacencySet.add(x);

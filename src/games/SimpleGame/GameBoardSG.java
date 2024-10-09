@@ -2,7 +2,6 @@ package games.SimpleGame;
 
 import controllers.PlayAgent;
 import games.Arena;
-import games.GameBoard;
 import games.GameBoardBase;
 import games.StateObservation;
 import tools.Types;
@@ -22,7 +21,7 @@ import java.util.Random;
  * @author Wolfgang Konen, TH Koeln, 2016-2020
  *
  */
-public class GameBoardSG extends GameBoardBase implements GameBoard {
+public class GameBoardSG extends GameBoardBase {
 
 	protected Random rand;
 	private transient GameBoardSGGui m_gameGui = null;

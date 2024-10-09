@@ -21,7 +21,7 @@ import tools.Types.ACTIONS;
  * </ul>
  * See {@link GameBoardNim2P} for game rules.
  */
-public class StateObserverNim extends ObserverBase implements StateObservation {
+public class StateObserverNim extends ObserverBase {
 	protected int[] m_heap;		// has for each heap the count of items in it
 	protected int m_player;		// player who makes the next move (0 or 1)
 	protected ArrayList<Types.ACTIONS> availableActions = new ArrayList<>();	// holds all available actions

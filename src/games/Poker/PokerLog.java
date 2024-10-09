@@ -59,7 +59,7 @@ public class PokerLog {
                         lr.getSourceClassName(),
                         lr.getSourceMethodName(),
                         lr.getMessage(),
-                        lr.getThreadID()
+                        lr.getLongThreadID()
                 );
             }
         });

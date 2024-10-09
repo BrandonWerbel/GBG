@@ -8,16 +8,9 @@ import controllers.ReplayBuffer.Selector.RandomSelector;
 import controllers.ReplayBuffer.Transition.ITransition;
 import controllers.ReplayBuffer.Transition.Transition;
 import controllers.TD.ntuple4.NextState4;
-import game.functions.ints.state.Score;
-import games.StateObsWithBoardVector;
 import games.StateObservation;
-import org.apache.batik.dom.svg.AbstractSVGNormPathSegList;
 import params.ParRB;
-import params.RBParams;
 import tools.ScoreTuple;
-import tools.Types;
-
-import javax.swing.plaf.nimbus.State;
 
 public class BaseBuffer{
 

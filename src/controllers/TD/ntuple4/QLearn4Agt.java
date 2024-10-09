@@ -17,7 +17,6 @@ import tools.Types.ACTIONS;
 import tools.Types.ACTIONS_VT;
 
 import java.io.Serial;
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.ListIterator;
@@ -72,7 +71,7 @@ import java.util.Random;
  * 
  * @author Wolfgang Konen, TH Koeln, Dec'18
  */
-public class QLearn4Agt extends NTuple4Base implements PlayAgent, NTuple4Agt,Serializable {
+public class QLearn4Agt extends NTuple4Base {
 
 	private EligType m_elig;
 

@@ -2,8 +2,6 @@ package params;
 
 import java.awt.*;
 import java.io.Serial;
-import java.io.Serializable;
-
 import javax.swing.*;
 
 import controllers.MC.MCAgentConfig;
@@ -25,7 +23,7 @@ import controllers.MC.MCAgentN;
  */
 //--- this is commented out: ---
 //* <li> <b>DOCALCCERTAINTY</b>  [false] Calculate Certainty while playing
-public class MCParams extends Frame implements Serializable
+public class MCParams extends Frame
 {
     JLabel LIterations;
     JLabel LRolloutdepth;

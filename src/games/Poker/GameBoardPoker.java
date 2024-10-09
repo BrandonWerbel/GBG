@@ -2,7 +2,6 @@ package games.Poker;
 
 import controllers.PlayAgent;
 import games.Arena;
-import games.GameBoard;
 import games.GameBoardBase;
 import games.StateObservation;
 import tools.Types;
@@ -10,7 +9,7 @@ import tools.Types;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class GameBoardPoker extends GameBoardBase implements GameBoard {
+public class GameBoardPoker extends GameBoardBase {
 
 	protected Random rand;
 	//private transient GameBoardPokerGui m_gameGui = null;

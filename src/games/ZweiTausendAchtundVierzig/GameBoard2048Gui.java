@@ -1,13 +1,9 @@
 package games.ZweiTausendAchtundVierzig;
 
 import games.Arena;
-import games.GameBoard;
-import games.StateObservation;
 import tools.Types;
 
 import javax.swing.*;
-
-import controllers.PlayAgent;
 
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -447,7 +443,7 @@ public class GameBoard2048Gui extends JFrame {
                     vBoard[i].setText("   ");
                     vBoard[i].setBackground(Color.red);
                 } else {
-                    double realScore = score * m_gb.m_so.MAXSCORE;
+                    double realScore = score * StateObserver2048.MAXSCORE;
                     String txt = null;
                     if (realScore >= 1000000) {
                         txt = "" + (String.format("%.1f", realScore));

@@ -10,12 +10,11 @@ import games.EWN.config.ConfigEWN;
 import tools.Types;
 
 import java.io.Serial;
-import java.io.Serializable;
 import java.text.DecimalFormat;
 import java.util.HashSet;
 
 
-public class XNTupleFuncsEWN extends XNTupleBase implements XNTupleFuncs, Serializable {
+public class XNTupleFuncsEWN extends XNTupleBase {
 
     private final static int[] fixedModes ={0}; // fixed modes for tuple selection
 

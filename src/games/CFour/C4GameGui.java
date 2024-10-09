@@ -9,11 +9,7 @@ import java.awt.GridBagLayout;
 import java.awt.GridLayout;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
-import java.io.IOException;
-import java.text.DecimalFormat;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.concurrent.Semaphore;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -22,7 +18,6 @@ import javax.swing.JPanel;
 
 import controllers.PlayAgent;
 import games.CFour.openingBook.BookSum;
-import gui.MessageBox;
 import tools.Types;
 
 //import openingBook.BookSum;

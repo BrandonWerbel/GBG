@@ -9,7 +9,6 @@ import tools.ScoreTuple;
 import tools.Types.ACTIONS;
 import tools.Types.ACTIONS_VT;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Random;
@@ -34,7 +33,7 @@ import java.util.Random;
  * @see ParMaxN
  * @see MaxNParams
  */
-public class MaxNAgent extends AgentBase implements PlayAgent, Serializable
+public class MaxNAgent extends AgentBase
 {
 	protected int m_depth=10;
 	protected boolean m_useHashMap=false; //true;

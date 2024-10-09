@@ -5,7 +5,6 @@ import games.EWN.StateObserverEWN;
 import games.EWN.StateObserverHelper.Helper;
 import games.EWN.config.ConfigEWN;
 import games.StateObservation;
-import games.ZweiTausendAchtundVierzig.Tile;
 import tools.Types;
 
 import javax.swing.*;

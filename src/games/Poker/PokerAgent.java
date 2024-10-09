@@ -15,7 +15,7 @@ import java.util.concurrent.ThreadLocalRandom;
  * @author Wolfgang Konen, TH Koeln, 2016
  *
  */
-public class PokerAgent extends AgentBase implements PlayAgent {
+public class PokerAgent extends AgentBase {
 
 
     // --- never used ---

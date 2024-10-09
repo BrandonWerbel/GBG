@@ -4,8 +4,6 @@ import java.io.Serializable;
 
 import games.Feature;
 import games.StateObservation;
-import games.Nim.StateObserverNim;
-import tools.Types;
 
 
 /**

@@ -68,7 +68,7 @@ public class NTuple2 implements Serializable {
 	// is realized by remembering the already visited indices in indexList.
 	// It ensures that an update with ALPHA=1.0 changes the LUT in such a way that a subsequent
 	// call getScoreI() returns a value identical to the target of that update.
-	private transient LinkedList indexList = new LinkedList();
+	private transient LinkedList<Integer> indexList = new LinkedList<Integer>();
 //	private transient int trainCounter[] = null;
 //	private boolean useIndexList = true;	// true: use indexList in updateNew()
 //											// false: use trainCounter in updateNew()
@@ -146,7 +146,7 @@ public class NTuple2 implements Serializable {
 	}
 
 	public boolean instantiateAfterLoading() {
-		indexList = new LinkedList();
+		indexList = new LinkedList<Integer>();
 		if (TC) {
 			tcN = new double[lut.length]; // matrix N in TC
 			tcA = new double[lut.length]; // matrix A in TC
@@ -339,7 +339,7 @@ public class NTuple2 implements Serializable {
 	 */
 	public void updateNew(int[] board, double alphaM, double delta, double e /*, double LAMBDA*/) {
 		int index = getIndex(board);
-		Integer indexI = new Integer(index);
+		Integer indexI = index;
 
 		double tcFactor = getTcFactor(index);	// returns 1 if (!TC)
 				
