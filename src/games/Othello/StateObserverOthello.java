@@ -75,10 +75,10 @@ public class StateObserverOthello extends ObserverBase{
 				currentGameState[i][j] = ConfigOthello.EMPTY;
 			}
 		}
-		currentGameState[3][3] = 1;
-		currentGameState[3][4] = BaseOthello.getOpponent(1);
-		currentGameState[4][3] = BaseOthello.getOpponent(1);
-		currentGameState[4][4] = 1;
+		currentGameState[3][3] = ConfigOthello.WHITE;
+		currentGameState[3][4] = BaseOthello.getOpponent(ConfigOthello.WHITE);
+		currentGameState[4][3] = BaseOthello.getOpponent(ConfigOthello.WHITE);
+		currentGameState[4][4] = ConfigOthello.WHITE;
 //		BaseOthello.deepCopyGameState(ConfigOthello.DEBUG[2], currentGameState);
 		playerNextMove = getOpponent(1);	// /WK/ the correct choice
 		countBlack = 2;
