@@ -23,6 +23,7 @@ public class Tile extends JButton{
 	private boolean isMarked = false;
 	
 	public Tile(GameBoardOthello gb, int i, int j) {
+		setOpaque(true);
 		Font font=new Font("Arial",Font.BOLD,Types.GUI_HELPFONTSIZE);
 		setFont(font);
 		setBackground(ConfigOthello.BOARDCOLOR);
