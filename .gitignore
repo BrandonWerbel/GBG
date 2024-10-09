@@ -164,3 +164,6 @@ Desktop.ini
 # Windows shortcuts
 *.lnk
 /bin/
+
+#VSCODE
+.vscode
