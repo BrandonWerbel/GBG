@@ -5,8 +5,6 @@ import java.util.Random;
 
 import controllers.PlayAgent;
 import games.Arena;
-import games.EWN.StateObserverEWN;
-import games.GameBoard;
 import games.GameBoardBase;
 import games.StateObservation;
 import games.Othello.Gui.GameBoardOthelloGui;
@@ -26,13 +24,8 @@ import tools.Types;
  * 
  * @author Julian Coeln, Yannick Dittmar, TH Koeln, 2019
  */
-public class GameBoardOthello extends GameBoardBase implements GameBoard {
+public class GameBoardOthello extends GameBoardBase {
 
-	/**
-	 * SerialNumber
-	 */
-	private static final long serialVersionUID = 12L;
-	
 	/**
 	 * Game Attributes
 	 */
