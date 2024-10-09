@@ -27,7 +27,7 @@ import tools.Types.ACTIONS_VT;
  * HeurPlayer can vary, even if the set of start states is exactly the same. Stronger variations for HeurPlayer, because 
  * due to its symmetric values more actions may lead to the same best score.
  */
-public class BenchMarkPlayer extends AgentBase implements PlayAgent, Serializable {
+public class BenchMarkPlayer extends AgentBase {
 
 	
 	public static final long serialVersionUID = 13L;
